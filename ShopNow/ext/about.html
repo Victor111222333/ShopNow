@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <title>About</title>
+    <link rel="stylesheet" href="stylea.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+    <div class="header-content">
+        <div class="profile-picture">
+            <img src="imgs/logo.png" alt="Funmilola Aroyewun">
+        </div>
+        <div class="profile-info">
+            <h1>Moradeyo Olamiposi</h1>
+            <p>CEO of ShopNow Outfit</p>
+            <p>We create beautiful styles for brides, grooms, ladies, and gentlemen. Explore our portfolio!</p>
+            <p>We also sell ready-made outfits for all age groups. Do well to patronize our brand, and I promise you will not regret it.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Services Section -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+        <!-- Service Cards -->
+        <div class="service-card">
+            <img src="imgs/bridal-icon.png" alt="Bridal Styles">
+            <h3>Bridal Styles</h3>
+            <p>Elegant and stunning bridal attire for your special day.</p>
+        </div>
+        <!-- Additional Service Card -->
+        <div class="service-card">
+            <img src="imgs/readymade-icon.png" alt="Ready-made Outfits">
+            <h3>Ready-made Outfits</h3>
+            <p>Explore our collection of ready-to-wear outfits for all age groups.</p>
+        </div>
+        <!-- New Service Card: Event Planning -->
+        <div class="service-card">
+            <img src="imgs/event-icon.png" alt="Event Planning">
+            <h3>Event Planning</h3>
+            <p>We cover event planning services to make your special occasions memorable.</p>
+        </div>
+        <!-- Add more service cards for each service -->
+    </div>
+</section>
+
+    <!-- Client Testimonials Section -->
+<section id="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial-carousel">
+        <!-- Testimonial slides -->
+    </div>
+    <p class="testimonial-message">Our clients absolutely adore our products! Crafted with exquisite detail and unparalleled quality, each piece speaks volumes of elegance and sophistication. But don't just take our word for it experience the magic yourself through the eyes of our delighted customers.</p>
+</section>
+
+    
+
+ 
+<!-- Footer Section -->
+<footer>
+    <div class="copyright">
+        <p>&copy; 2024 ShopNow Outfit. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

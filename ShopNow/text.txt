@@ -1,0 +1,29 @@
+ <h4><i class="fa-brands fa-instagram"></i>
+
+   <footer class="section-p1">
+        <div class="col">
+          <img class="logo" src="logo.jpg" alt="logo">
+          <h4>Contact</h4>
+          <p><strong>Address:</strong>Lagos state</p>
+          <p><strong>Phone:</strong> <a href="tel:+2349135647827">0913-564-7827</a>, <a href="tel:+2349011592416">0901-159-2416</a></p>
+          <p><strong>Hours:</strong> 8:00am-11:30pm/Mon-Sun</p>
+          <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+              <a href="https://www.instagram.com/victor_thedeveloper?igsh=MXcwYm01ZTBpeXZiNg=="><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://x.com/moradeyoOlamip1?t=I6TyxhWI61kkUyb6xWvSQw&s=09"><img src="img/x-twitter.svg" alt="twitter"></a>
+              <a href="https://www.linkedin.com/in/moradeyo-olamiposi-a25420245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="img/LinkedIn .svg" alt="LinkedIn"></a>
+              </div>
+               <div class="col">
+                <h4>About</h4>
+                <a href="/ext/about.html">About us</a>
+                <a href="/ext/terms and conditions.html">Terms & condition</a>
+                <a href="/ext/help.html">Help/Contact The Developer</a>
+                <a href="/ext/Privacy policy.html">Privacy policy</a>
+               </div>
+               <div class="col">
+               <div class="copyright">
+                <p>@ 2024, ShopNow  - Victor-Code</p>
+               </div>
+             </div>
+         </footer>

@@ -1,0 +1,191 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #E4EBDD; /* Updated background color */
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: #427CFF; /* Updated background color */
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    color: #E4EBDD; /* Updated text color */
+}
+
+.header-content p {
+    margin-bottom: 20px;
+    color: #E4EBDD; /* Updated text color */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #427CFF; /* Updated background color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #3063C8; /* Darker shade for hover effect */
+}
+
+/* Services styles */
+#services {
+    background: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+
+.testimonial-message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background: #427CFF; /* Updated background color */
+    color: #E4EBDD; /* Updated text color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile-picture {
+    margin-right: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    text-align: left;
+    flex: 1;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+/* Testimonials styles */
+#testimonials {
+    background: #427CFF; /* Keep the background color */
+    padding: 60px 0;
+    text-align: center;
+    color: #E4EBDD; /* Updated text color */
+}
+
+.testimonial-message {
+    background-color: #fff; /* Change background color to white */
+    border-left: 6px solid #ff7b54; /* Keep the border color */
+    padding: 15px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-style: italic;
+    font-size: 16px;
+    color: #333; /* Change text color to black */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Keep the shadow effect */
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #427CFF; /* Solid background color */
+    color: #E4EBDD; /* Text color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Copyright styles */
+.copyright {
+    padding: 10px;
+    border-top: 1px solid #fff; /* Light border */
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 14px;
+}
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #E4EBDD; /* Text color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Copyright styles */
+.copyright {
+    padding: 10px;
+    border-top: 1px solid #fff; /* Light border */
+    border-bottom: 1px solid #fff; /* Light border */
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 14px;
+}

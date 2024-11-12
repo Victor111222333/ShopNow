@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=30px, initial-scale=1.0">
+    <link rel="stylesheet" href="shop2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shop</title>
+</head>
+<body>
+    <div class="img-font" onclick="toggleCart()">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount" class="badge">0</span>
+    </div>
+    
+    
+<!-- Search Section -->
+<section class="search-section">
+    <form class="search-form" onsubmit="return searchProducts()">
+        <input type="text" id="searchInput" placeholder="Search for products..." required>
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</section>
+
+
+<div class="cart hidden" id="shoppingCart">
+    <h2 id="h2-sp">Shopping Cart <span id="itemCounter">0</span></h2>
+    <ul id="cartItems"></ul>
+    <p id="p-sp">Total: ₦<span id="cartTotal">0</span></p>
+    <button onclick="clearCart()">Clear Cart</button>
+    <button id="toggleNamesButton" onclick="toggleItemNames()">Show Names</button>
+    <button onclick="buyNow()">Buy Now</button>
+</div>
+
+
+  <h1>Latest Stock</h1>
+  <section class="sec">
+      <div class="products">
+        <div class="card">
+            <div class="img"><img src="shop-img/hoodie3.webp" alt=""> </div>
+            <div class="desc">Female</div>
+            <div class="title">Hoodie</div>
+            <div class="box">
+                <div class="price">₦15,500</div>
+                <button class="btn" onclick="addToCart('Female-Hoodie 1', 15500)">Add to Cart</button>
+            </div>              
+        </div>
+          <!--card end-->
+
+          <!-- Additional cards -->
+          <div class="card">
+              <div class="img"><img src="shop-img/trouser1.jpg" alt=""></div>
+              <div class="desc">Male</div>
+              <div class="title">Trouser</div>
+              <div class="box">
+                  <div class="price">₦16,000</div>
+                  <button class="btn" onclick="addToCart('Male-Trouser 1', 16000)">Add to Cart</button>
+              </div>
+          </div>
+
+          <div class="card">
+            <div class="img"><img src="shop-img/shoe1.jpg" alt=""> </div>
+            <div class="desc">Female</div>
+            <div class="title">Shoe</div>
+            <div class="box">
+                <div class="price">₦9,500</div>
+                <button class="btn" onclick="addToCart('Female-Shoe 1', 9500)">Add to Cart</button>
+            </div>              
+        </div>
+
+          <div class="card">
+              <div class="img"><img src="shop-img/women shirt.jpg" alt=""></div>
+              <div class="desc">Female</div>
+              <div class="title">Top</div>
+              <div class="box">
+                  <div class="price">₦4,560</div>
+                  <button class="btn" onclick="addToCart('Female-Top 1', 4560)">Add to Cart</button>
+              </div>
+          </div>
+
+          <div class="card">
+            <div class="img"><img src="shop-img/short2.jpg" alt=""></div>
+            <div class="desc">Male</div>
+            <div class="title">Short</div>
+            <div class="box">
+                <div class="price">₦9,420</div>
+                <button class="btn" onclick="addToCart('Male-Short 1', 9420)">Add to Cart</button>
+            </div>
+        </div>
+
+          <div class="card">
+              <div class="img"><img src="shop-img/shoe3.jpg" alt=""></div>
+              <div class="desc">Male</div>
+              <div class="title">Shoe</div>
+              <div class="box">
+                  <div class="price">₦50,500</div>
+                  <button class="btn" onclick="addToCart('Male-Shoe 1', 50500)">Add to Cart</button>
+              </div>
+          </div>
+
+          <div class="card">
+            <div class="img"><img src="shop-img/shoe2.avif" alt=""></div>
+            <div class="desc">Female</div>
+            <div class="title">Shoe</div>
+            <div class="box">
+                <div class="price">₦7,220</div>
+                <button class="btn" onclick="addToCart('Female-Shoe 2', 7220)">Add to Cart</button>
+            </div>
+        </div>
+
+          <div class="card">
+              <div class="img"><img src="shop-img/hoodie2.webp" alt=""></div>
+              <div class="desc">Male</div>
+              <div class="title">Hoodie</div>
+              <div class="box">
+                  <div class="price">₦33,500</div>
+                  <button class="btn" onclick="addToCart('Male-Hoodie 1', 33500)">Add to Cart</button>
+              </div>
+          </div>
+
+          <div class="card">
+              <div class="img"><img src="shop-img/short.jpg" alt=""></div>
+              <div class="desc">Male</div>
+              <div class="title">Short</div>
+              <div class="box">
+                  <div class="price">₦11,800</div>
+                  <button class="btn" onclick="addToCart('Male-Short 2', 11800)">Add to Cart</button>
+              </div>
+          </div>
+          <!-- End additional cards -->
+          
+          <!-- Additional cards -->
+          <div class="card">
+              <div class="img"><img src="shop-img/shirt4.jpg" alt=""></div>
+              <div class="desc">Female</div>
+              <div class="title">Shirt</div>
+              <div class="box">
+                  <div class="price">₦9,500</div>
+                  <button class="btn" onclick="addToCart('Female-Shirt 1', 9500)">Add to Cart</button>
+              </div>
+          </div>
+
+          <div class="card">
+              <div class="img"><img src="shop-img/shirt2.webp" alt=""></div>
+              <div class="desc">Female</div>
+              <div class="title">Shirt</div>
+              <div class="box">
+                  <div class="price">₦7,300</div>
+                  <button class="btn" onclick="addToCart('Female-Shirt 2', 7300)">Add to Cart</button>
+              </div>
+          </div>
+          <div class="card">
+              <div class="img"><img src="shop-img/shoe4.jpg" alt=""></div>
+              <div class="desc">Male</div>
+              <div class="title">Shoe</div>
+              <div class="box">
+                  <div class="price">₦15,600</div>
+                  <button class="btn" onclick="addToCart('Male-Shoe 2', 15600)">Add to Cart</button>
+              </div>
+          </div>
+          <!-- End additional cards -->
+      </div>
+  </section>
+
+<script src="script.js"></script>
+  
+</body>
+</html>
